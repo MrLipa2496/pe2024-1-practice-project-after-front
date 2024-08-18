@@ -241,7 +241,7 @@
     background: white
 
 
-@mixin innerContainer
+%innerContainer
   display: flex
   flex-direction: column
   justify-content: center
@@ -285,23 +285,34 @@
   @media screen and (max-width: 414px)
     padding: 0
 
+.namingContestContainer
+  @extend %innerContainer
+  background-color: white
+  box-sizing: border-box
+  padding-left: 10px
+  padding-right: 10px
+
+.firstPlatformContainer
+  @extend %innerContainer
+  background-color: white
+  box-sizing: border-box
 
 .greyContainer
-  @include innerContainer
+  @extend %innerContainer
   background-color: #FAFAFA
 
 
 .whiteContainer
-  @include innerContainer
+  @extend %innerContainer
   background-color: white
 
 
 .greenContainer
-  @include innerContainer
+  @extend %innerContainer
   background-color: #28D2D0
 
 .blueContainer
-  @include innerContainer
+  @extend %innerContainer
   background-color: #2B62EC
   color: white
 
