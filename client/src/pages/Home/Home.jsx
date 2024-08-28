@@ -8,6 +8,7 @@ import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import NamimgContest from './NamimgContest/NamimgContest';
 import FirstNamingPlatform from './FirstNamingPlatform/FirstNamingPlatform';
+import NamingAgency from './NamingAgency/NamingAgency';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -68,6 +69,11 @@ const Home = props => {
               <div className={styles.firstPlatformContainer}>
                 <FirstNamingPlatform />
               </div>
+
+              <div className={styles.namingAgencyContainer}>
+                <NamingAgency />
+              </div>
+
               <div className={styles.container__description}>
                 <h2 className={styles.blueUnderline}>Why Squadhelp?</h2>
                 <div className={styles.cardContainer}>
