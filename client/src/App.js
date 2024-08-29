@@ -21,6 +21,7 @@ import Layout from './pages/Layout/Layout';
 import OnlyNotAuthorizedUserRoute from './components/Routes/OnlyNotAuthorizedUserRoute/OnlyNotAuthorizedUserRoute';
 import PrivateRoute from './components/Routes/PrivateRoute/PrivateRoute';
 import PricingPage from './pages/PricingPage/PricingPage';
+import RecomendedForYou from './pages/RecomendedForYou/RecomendedForYou';
 
 class App extends Component {
   render () {
@@ -41,6 +42,7 @@ class App extends Component {
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
             <Route path='/pricing' element={<PricingPage />} />
+            <Route path='/foryou' element={<RecomendedForYou />} />
 
             <Route element={<OnlyNotAuthorizedUserRoute />}>
               <Route path='/login' element={<LoginPage />} />

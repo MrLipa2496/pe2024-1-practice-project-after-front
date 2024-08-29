@@ -127,6 +127,11 @@ class Header extends React.Component {
             <div className={styles.nav}>
               <ul>
                 <li>
+                  <Link className={styles.forYouLink} to='/foryou'>
+                    FOR YOU
+                  </Link>
+                </li>
+                <li>
                   <span>NAME IDEAS</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
@@ -190,7 +195,7 @@ class Header extends React.Component {
                   </ul>
                 </li>
                 <li>
-                  <span>Our Work</span>
+                  <span>OUR WORK</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt='menu'
@@ -211,7 +216,7 @@ class Header extends React.Component {
                   </ul>
                 </li>
                 <li>
-                  <span>Names For Sale</span>
+                  <span>NAMES FOR SALE</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt='menu'
@@ -238,7 +243,7 @@ class Header extends React.Component {
                   </ul>
                 </li>
                 <li>
-                  <span>Blog</span>
+                  <span>BLOG</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt='menu'
