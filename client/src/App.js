@@ -42,7 +42,6 @@ class App extends Component {
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
             <Route path='/pricing' element={<PricingPage />} />
-            <Route path='/foryou' element={<RecomendedForYou />} />
 
             <Route element={<OnlyNotAuthorizedUserRoute />}>
               <Route path='/login' element={<LoginPage />} />
@@ -82,6 +81,7 @@ class App extends Component {
               <Route path='/dashboard' element={<Dashboard />} />
               <Route path='/contest/:id' element={<ContestPage />} />
               <Route path='/account' element={<UserProfile />} />
+              <Route path='/foryou' element={<RecomendedForYou />} />
             </Route>
             <Route path='*' element={<NotFound />} />
           </Route>
